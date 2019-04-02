@@ -8,3 +8,4 @@
 
 The prevision of diapers stock end is calculated in minutes.
 
+I've made a very simple UI using no framework just to help to use the methods. It's lacks a better validation and messages to the user!
