@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Look After</title>
+
+  <link rel="stylesheet" type="text/css" href="index.css">
+
+</head>
+
+<body>
+  <h1>Look After diapers stock managment</h1>
+
+  <section id="section-sell">
+    <form class="form form-sell" class="form">
+      <div class="form-field">
+          <label for="input-amount-sell">Amount to sell</label>
+          <input class="form-input" id="input-amount-sell" type="number" step="1" />
+      </div>
+    </form>
+    <div class="content-right">
+      <button class="button button--save" onclick="confirmSell()">CONFIRM</button>
+    </div>  
+  </section>
+  
+  <section id="section-new">
+    <form class="form form-new" class="form">
+      <div class="form-field">
+        <label for="select-model">Model</label>
+        <select id="select-model" class="form-input">
+          <option value=""></option>
+          <option>Model 1</option>
+          <option>Model 2</option>
+          <option>Model 3</option>
+          <option>Model 4</option>
+        </select>
+      </div>
+      <div class="form-field">
+        <label for="select-size">Size</label>
+        <select id="select-size" class="form-input">
+          <option value=""></option>
+          <option value="S">Small</option>
+          <option value="M">Medium</option>
+          <option value="L">Large</option>
+        </select>
+      </div>
+      <div class="form-field">
+        <label for="input-description">Description</label>
+        <textarea class="form-input" id="input-description"></textarea>
+      </div>
+      <div class="form-field">
+        <label for="input-amount">Amount in stock</label>
+        <input class="form-input" id="input-amount" type="number" step="1" />
+      </div>
+    </form>
+    <div class="content-right">
+      <button class="button button--save" onclick="addDiaperToStock()">Add more</button>
+    </div>
+  </section>
+
+  <table class="table">
+    <thead>
+      <tr>
+        <th>Model</th>
+        <th>Size</th>
+        <th>Amount left</th>
+        <th>Last purchase</th>
+        <th>Exhaustion forecast (minutes)</th>
+        <th>Actions</th>
+      </tr>
+    </thead>
+    <tbody id="table-body">
+
+    </tbody>
+  </table>
+
+</body>
+
+<script type="application/javascript" src="index.js"></script>
+
+<template id="diaper-template">
+  <tr>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td>
+      <button class="button button--sell">PURCHASE</button>
+    </td>
+  </tr>
+</template>
+
+</html>

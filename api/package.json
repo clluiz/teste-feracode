@@ -1,0 +1,18 @@
+{
+  "name": "api-feracode",
+  "version": "1.0.0",
+  "description": "Api para o teste técnico da Feracode",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Cleiton Luiz",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "express": "^4.16.4",
+    "moment": "^2.24.0",
+    "nano": "^8.0.1"
+  }
+}
